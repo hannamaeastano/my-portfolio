@@ -2,7 +2,7 @@
 
 Welcome to my **developer portfolio**! This is where I showcase my projects, skills, and journey in tech. Built with ❤️ and [Tech Stack]. 
 
-🔗 **Live Demo:** [https://your-portfolio-url.com](https://your-portfolio-url.com)
+🔗 **Live Demo:** [https://hannamaeastano.github.io/my-portfolio/)
 
 ---
 
