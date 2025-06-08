@@ -10,15 +10,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 100%;
+  
 }
+
 
 body {
   font-family: 'Poppins', sans-serif;
   color: var(--dark);
   line-height: 1.6;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards;
+  width: 100%;
 }
 
 @keyframes fadeIn {
@@ -246,21 +250,20 @@ section {
 
 .section-title {
   font-size: 2.5rem;
-  position: relative;
-  padding-bottom: 15px;
+  position: static;
+  padding-bottom: 0;
 }
 
-.section-title:after {
+/* .section-title:after {
   content: '';
   position: absolute;
-  display: block;
   width: 80px;
   height: 4px;
   background: var(--primary);
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-}
+} */
 
 .section-subtitle {
   color: var(--gray);
@@ -427,7 +430,7 @@ section {
   top: 0;
   bottom: 0;
   left: 50%;
-  margin-left: -1px;
+  margin-left: 0;
 }
 
 .timeline-item {
@@ -596,6 +599,10 @@ section {
 }
 
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .hero-title {
     font-size: 2.2rem;
   }
@@ -608,6 +615,7 @@ section {
     max-width: 250px;
     margin-top: 2rem;
   }
+  
 }
 
 @media (max-width: 576px) {
